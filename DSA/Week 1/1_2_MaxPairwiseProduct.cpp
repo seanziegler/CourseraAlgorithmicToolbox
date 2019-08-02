@@ -76,7 +76,7 @@ int test() {
 	
 }
 
-int main() {
+int main_() {
 
 	int n;
 	cin >> n;
@@ -92,5 +92,5 @@ int main() {
 
 	cout << fixed << setprecision(0) << max << endl;
 
-
+	return 0;
 }
