@@ -5,14 +5,14 @@
 
 using namespace std;
 
-float maxValueOfLoot(int items, int capacity, vector<int> &values, vector<int> &weights) {
+double maxValueOfLoot(int items, int capacity, vector<int> &values, vector<int> &weights) {
 
-	vector<float> density(items);
-	float valueInBag = 0;
+	vector<double> density(items);
+	double valueInBag = 0;
 	for (int i = 0; i < items; i++) {
-		density[i] = values[i] / weights[i];
+		density[i] = (double) values[i] / weights[i];
 	}
-	while (capacity > 0) {
+	while (capacity > 0 and density.size() != 0) {
 		int maxElementIndex = max_element(density.begin(), density.end()) - density.begin();
 		if (capacity >= weights[maxElementIndex]) {
 			capacity -= weights[maxElementIndex];
@@ -23,7 +23,7 @@ float maxValueOfLoot(int items, int capacity, vector<int> &values, vector<int> &
 		}
 		else if (capacity < weights[maxElementIndex]) {
 
-			float proportion = (float) capacity / weights[maxElementIndex];
+			double proportion = (double) capacity / weights[maxElementIndex];
 			capacity = 0;
 			valueInBag += values[maxElementIndex] * proportion;
 		}
@@ -49,7 +49,8 @@ int main() {
 		values[i] = value; 
 		weights[i] = weight;
 	}
-	float valueInBag = maxValueOfLoot(items, capacity, values, weights);
+	double valueInBag = maxValueOfLoot(items, capacity, values, weights);
 	cout << fixed << setprecision(4) << valueInBag << endl;
 	return 0;
 }
+
