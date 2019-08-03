@@ -3,9 +3,9 @@
 
 using namespace std;
 
-vector<int> fibonacciLastDigit(long n) {
+vector<int> fibonacciLastDigit(double n) {
 
-	vector<int> fibonacci(3);
+	vector<int> fibonacci(n + 1);
 
 	if (n == 0) {
 		fibonacci[0] = 0;
@@ -16,19 +16,15 @@ vector<int> fibonacciLastDigit(long n) {
 	else {
 		fibonacci[0] = 0;
 		fibonacci[1] = 1;
-		i = 2;
-		while(i < n) {
-			fibonacci[0] = fibonacci[1];
-			fibonacci[1] = fibonacci[2];
-			fibonacci[2] = (fibonacci[1] + fibonacci[0]) % 10;
- 			i++; 
+		for (int i = 2; i <= n; i++) {
+			fibonacci[i] = (fibonacci[i - 1] + fibonacci[i - 2]) % 10;
 		}
 	}
 
 	return fibonacci;
 }
 
-int lastDigitOfFibSum(long n) {
+int lastDigitOfFibSum(double n) {
 
 	int lastDigitSum = 0;
 	vector<int> fibonacciLastDigits = fibonacciLastDigit(n);
@@ -40,7 +36,7 @@ int lastDigitOfFibSum(long n) {
 
 int main() {
 
-	long n;
+	double n;
 	cin >> n;
 	int lastdigit = lastDigitOfFibSum(n);
 	cout << lastdigit;

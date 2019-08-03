@@ -18,20 +18,5 @@
     <ClCompile Include="Week 2\2_6_LastDigitOfFibSum.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Week 2\2_1_ComputeFibonacci.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Week 2\2_2_LastDigitOfFibonacci.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Week 2\2_3_GreatestCommonDenominator.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Week 2\2_4_LeastCommonMultiplecpp.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Week 2\2_7_LastDigitOfPartialFibSumcpp.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
   </ItemGroup>
 </Project>

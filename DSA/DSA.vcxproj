@@ -19,12 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Week 2\2_1_ComputeFibonacci.cpp" />
-    <ClCompile Include="Week 2\2_2_LastDigitOfFibonacci.cpp" />
-    <ClCompile Include="Week 2\2_3_GreatestCommonDenominator.cpp" />
-    <ClCompile Include="Week 2\2_4_LeastCommonMultiplecpp.cpp" />
     <ClCompile Include="Week 2\2_6_LastDigitOfFibSum.cpp" />
-    <ClCompile Include="Week 2\2_7_LastDigitOfPartialFibSumcpp.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
