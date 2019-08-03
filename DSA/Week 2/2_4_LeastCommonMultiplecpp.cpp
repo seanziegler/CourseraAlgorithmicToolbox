@@ -15,11 +15,11 @@ int gcd_fast(int a, int b) {
 	}
 }
 
-double findlcm(int a, int b) {
+long findlcm(int a, int b) {
 
 	int gcd = gcd_fast(a, b);
-	double product = (double) a * (double) b; 
-	double lcm = product / gcd;
+	long product = (double) a * (double) b; 
+	long lcm = product / gcd;
 
 	return lcm;
 
@@ -28,12 +28,12 @@ double findlcm(int a, int b) {
 
 int main() {
 
-	double a; 
-	double b;
+	long a; 
+	long b;
 	cin >> a;
 	cin >> b;
 
-	double lcm = findlcm(a, b);
+	long lcm = findlcm(a, b);
 
 	cout << fixed << setprecision(0) << lcm << endl;
 	
