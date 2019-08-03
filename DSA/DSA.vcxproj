@@ -18,6 +18,9 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Week 2\2_6_LastDigitOfFibSum.cpp" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <ProjectGuid>{5B1E1D2B-91C1-43A7-AE49-DE830F56FE12}</ProjectGuid>
@@ -122,17 +125,6 @@
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="Week 1\1_2_MaxPairwiseProduct.cpp" />
-    <ClCompile Include="Week 2\2_1_ComputeFibonacci.cpp" />
-    <ClCompile Include="Week 2\2_2_LastDigitOfFibonacci.cpp" />
-    <ClCompile Include="Week 2\2_3_GreatestCommonDenominator.cpp" />
-    <ClCompile Include="Week 2\2_4_LeastCommonMultiplecpp.cpp" />
-    <ClCompile Include="Week 2\2_5_LastDigitOfFibSum.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="Week 2\main.h" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

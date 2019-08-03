@@ -23,10 +23,10 @@ int fibonacciLastDigit(int n) {
 	return fibonacci[n];
 }
 
-//int main() {
-//	int n;
-//	cin >> n;
-//	int lastDigit = fibonacciLastDigit(n);
-//	cout << lastDigit << endl;
-//	return 0;
-//}
+int main() {
+	int n;
+	cin >> n;
+	int lastDigit = fibonacciLastDigit(n);
+	cout << lastDigit << endl;
+	return 0;
+}

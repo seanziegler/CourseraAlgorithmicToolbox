@@ -1,8 +1,19 @@
 #include <iostream>
 #include <iomanip>
-#include "main.h"
 using namespace std;
 
+
+int gcd_fast(int a, int b) {
+
+	if (b == 0) {
+		return a;
+	}
+	else {
+
+		int mod = a % b;
+		return gcd_fast(b, mod);
+	}
+}
 
 double findlcm(int a, int b) {
 
@@ -14,17 +25,17 @@ double findlcm(int a, int b) {
 
 }
 
-//
-//int main() {
-//
-//	double a; 
-//	double b;
-//	cin >> a;
-//	cin >> b;
-//
-//	double lcm = findlcm(a, b);
-//
-//	cout << fixed << setprecision(0) << lcm << endl;
-//	
-//	return 0;
-//}
+
+int main() {
+
+	double a; 
+	double b;
+	cin >> a;
+	cin >> b;
+
+	double lcm = findlcm(a, b);
+
+	cout << fixed << setprecision(0) << lcm << endl;
+	
+	return 0;
+}

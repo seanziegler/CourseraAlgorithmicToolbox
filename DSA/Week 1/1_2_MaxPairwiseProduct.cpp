@@ -76,21 +76,21 @@ int test() {
 	
 }
 
-//int main() {
-//
-//	int n;
-//	cin >> n;
-//	vector<int> inputs(n);
-//
-//	for (int i = 0; i < n; i++) {
-//			int x;
-//			cin >> x;
-//			inputs[i] = x; //store all inputs into vector
-//		}
-//
-//	double max = maxPairwiseProductFast(n, inputs);
-//
-//	cout << fixed << setprecision(0) << max << endl;
-//
-//	return 0;
-//}
+int main() {
+
+	int n;
+	cin >> n;
+	vector<int> inputs(n);
+
+	for (int i = 0; i < n; i++) {
+			int x;
+			cin >> x;
+			inputs[i] = x; //store all inputs into vector
+		}
+
+	double max = maxPairwiseProductFast(n, inputs);
+
+	cout << fixed << setprecision(0) << max << endl;
+
+	return 0;
+}

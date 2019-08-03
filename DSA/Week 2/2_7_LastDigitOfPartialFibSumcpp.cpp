@@ -3,7 +3,7 @@
 
 using namespace std;
 
-vector<int> fibonacciLastDigit(int n) {
+vector<int> fibonacciPartialLastDigit(int n) {
 
 	vector<int> fibonacci(n + 1);
 
@@ -24,22 +24,23 @@ vector<int> fibonacciLastDigit(int n) {
 	return fibonacci;
 }
 
-int lastDigitOfFibSum(int n) {
+int lastDigitOfPartialFibSum(int m, int n) {
 
 	int lastDigitSum = 0;
-	vector<int> fibonacciLastDigits = fibonacciLastDigit(n);
-	for (int i = 0; i < fibonacciLastDigits.size(); i++) {
+	vector<int> fibonacciLastDigits = fibonacciPartialLastDigit(n);
+	for (int i = m; i < fibonacciLastDigits.size(); i++) {
 		lastDigitSum += fibonacciLastDigits[i];
 	}
 	return lastDigitSum % 10;
 }
 
-//int main() {
-//
-//	int n;
-//	cin >> n;
-//	int lastDigit = lastDigitOfFibSum(n);
-//	cout << lastDigit;
-//
-//	return 0;
-//}
+int main() {
+	int m;
+	int n;
+	cin >> m;
+	cin >> n;
+	int lastDigit = lastDigitOfPartialFibSum(m, n);
+	cout << lastDigit;
+
+	return 0;
+}
