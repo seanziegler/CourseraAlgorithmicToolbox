@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Week 3\3_2_MaximumValueOfLoot.cpp">
+    <ClCompile Include="Week 3\3_6_MaximumNumberOfPrizes.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
