@@ -18,8 +18,22 @@
     <ClCompile Include="Week 1\1_2_MaxPairwiseProduct.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Week 2\2_1_ComputerFibonacci.cpp">
+    <ClCompile Include="Week 2\2_1_ComputeFibonacci.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Week 2\2_4_LeastCommonMultiplecpp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Week 2\2_3_GreatestCommonDenominator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Week 2\2_2_LastDigitOfFibonacci.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Week 2\main.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
