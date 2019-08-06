@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Week 3\3_6_MaximumNumberOfPrizes.cpp">
+    <ClCompile Include="Week 4\4_1_BinarySearch.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
