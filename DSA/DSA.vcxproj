@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Week 4\4_3_ImprovedQuickSort.cpp" />
+    <ClCompile Include="Week 5\5_1_DynamicMoneyChange.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
