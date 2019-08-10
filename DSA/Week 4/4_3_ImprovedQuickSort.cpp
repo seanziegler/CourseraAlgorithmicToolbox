@@ -9,20 +9,22 @@ vector<int> improvedQuickSort(vector<int>& list, int low, int high) {
 
 		return list;
 	}
+	int random = low + rand() % (high - low);
+	list.insert(list.begin() + low, list[random]);
+	list.erase(list.begin() + random + 1);
 	int pivot = list[low];
 
 	int belowEndPointer = low; //points to last element in section less than pivot
 	int equalEndPointer = low; //points to last element in section equal to pivot
 	for (int i = low + 1; i < high; i++) {
 		if (list[i] == pivot) {
-			list.insert(list.begin() + equalEndPointer, list[i]);
-			list.erase(list.begin() + i + 1);
+			swap(list[equalEndPointer + 1], list[i]);
 			equalEndPointer++;
 		}
 		else if (list[i] < pivot) {
+			swap(list[i], list[equalEndPointer + 1]);
 
-			list.insert(list.begin() + belowEndPointer, list[i]);
-			list.erase(list.begin() + i + 1);
+			swap(list[equalEndPointer + 1], list[belowEndPointer]);
 			belowEndPointer++;
 			equalEndPointer++;
 		}
@@ -70,7 +72,6 @@ int main() {
 	vector<int> sortedList = improvedQuickSort(list, 0, list.size());
 	for (int i = 0; i < n; i++) {
 		cout << sortedList[i] << " ";
-
 	}
 	return 0;
 }
