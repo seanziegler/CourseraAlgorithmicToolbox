@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Week 5\5_1_DynamicMoneyChange.cpp" />
+    <ClCompile Include="Week 5 - Dynamic Programming I\5_1_DynamicMoneyChange.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>

@@ -1,5 +1,6 @@
 #include <iostream>;
 #include <vector>;
+#include <algorithm>;
 
 using namespace std;
 
@@ -7,23 +8,23 @@ int dynamicMoneyChange(int amount) {
 	
 	int coins[3] = { 1, 3, 4 };			// denominations of coins
 
-	vector<int> prevNumberOfCoins(amount);
+	vector<int> numberOfCoins = {0, 1, 2, 1, 1};	//init conditions
 
-	//init conditions
+		
+	if (amount >= 5) {
+		for (int i = 5; i <= amount; i++) {
 
-	prevNumberOfCoins[0] = 0;
-	prevNumberOfCoins[1] = 1;
-	prevNumberOfCoins[2] = 2;
-	prevNumberOfCoins[3] = 1;
-	prevNumberOfCoins[4] = 1;
+			vector<int> possibleChange(3);
+			possibleChange[0] = numberOfCoins[i - 1] + 1; //make change using 1 cent
+			possibleChange[1] = numberOfCoins[i - 3] + 1; //make change using 3 cent
+			possibleChange[2] = numberOfCoins[i - 4] + 1; //make change using 4 cent
 
-	for (int i = 0; i < amount; i++) {
-	
-	
-	
+			int min = *min_element(possibleChange.begin(), possibleChange.end());
+			numberOfCoins.push_back(min); //store optimal result
+
+		}
 	}
-
-
+	return numberOfCoins[amount];
 
 }
 
