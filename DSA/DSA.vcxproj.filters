@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Week 5 - Dynamic Programming I\5_2_PrimitiveCalculator.cpp">
+    <ClCompile Include="Week 5 - Dynamic Programming I\5_3_EditDistance.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
