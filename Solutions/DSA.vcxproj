@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Week 6 - Dynamic Programming II\6_1_MaximumGold.cpp" />
+    <ClCompile Include="Week 6 - Dynamic Programming II\6_2_EqualSubsets.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
